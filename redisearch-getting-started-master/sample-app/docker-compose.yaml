@@ -1,0 +1,104 @@
+version: '3.10'
+services:
+
+    # Start RediSearch 
+    redis-stack:
+        image:  redis/redis-stack:latest
+        container_name: redis-stack
+        ports:
+            - "6379:6379" 
+            - "8001:8001" 
+        networks:
+            - redisearch-gettingstarted
+        volumes:
+            - ./redisearch-docker/dataset:/dataset
+            - ./redis:/data`
+            
+    # Start redis-stack to run load script and exit 
+    redis-stack-2:
+        image:  redis/redis-stack:latest
+        container_name: redis-stack-2
+        ports:
+            - "6380:6379" 
+        networks:
+            - redisearch-gettingstarted
+        volumes:
+            - ./redisearch-docker/dataset:/dataset
+        command:
+            [ "sh", "./dataset/import-data.sh" ]
+        depends_on:
+            - redis-stack    
+            
+    rest-java:
+        build:
+            context: ./redisearch-jedis-rest
+            dockerfile: Dockerfile
+        container_name: rest-java
+        ports:
+            - "8085:8085" 
+        environment:
+            - REDIS_URL=redis://redis-stack:6379
+            - REDIS_INDEX=idx:movie
+        networks:
+            - redisearch-gettingstarted
+        restart: always
+        depends_on:
+            - redis-stack    
+
+    rest-node:
+        build:
+            context: ./redisearch-node-rest
+            dockerfile: Dockerfile
+        container_name: rest-node
+        ports:
+            - "8086:8086" 
+        environment:
+            - REDIS_URL=redis://redis-stack:6379
+            - REDIS_INDEX=idx:movie
+        networks:
+            - redisearch-gettingstarted
+        restart: always
+        depends_on:
+            - redis-stack   
+
+
+    rest-python:
+        build:
+            context: ./redisearch-python-rest
+            dockerfile: Dockerfile
+        container_name: rest-python
+        ports:
+            - "8087:8087" 
+        environment:
+            - REDIS_SERVER=redis-stack
+            - REDIS_PORT=6379
+            - REDIS_INDEX=idx:movie
+        networks:
+            - redisearch-gettingstarted
+        restart: always
+        depends_on:
+            - redis-stack  
+
+    search-frontend:
+        build:
+            context: ./front-end
+            dockerfile: Dockerfile
+        container_name: search-frontend
+        ports:
+            - "8084:8084" 
+        environment:
+            - VUE_APP_SEARCH_API_JAVA=http://rest-java:8085
+            - VUE_APP_SEARCH_API_NODE=http://rest-node:8086
+            - VUE_APP_SEARCH_API_PYTHON=http://rest-python:8087
+        networks:
+            - redisearch-gettingstarted
+        restart: always
+        depends_on:
+            - redis-stack  
+            - rest-java
+            - rest-node
+            - rest-python
+
+networks:
+    redisearch-gettingstarted:
+        driver: bridge
