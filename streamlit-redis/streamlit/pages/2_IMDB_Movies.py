@@ -1,7 +1,6 @@
 import os
 import redis
 import pandas as pd
-from redisearch-getting-started-master.sample-app.redisearch-python-rest.server import docs_to_dict
 import streamlit as st
 from redis.commands.search.query import Query
 
