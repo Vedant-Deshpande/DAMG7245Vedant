@@ -163,3 +163,6 @@ git_demo/demo_venv
 .DS_STORE
 gx/gx
 streamlit-redis/streamlit/.venv_streamlit
+
+fastapi-streamlit/fastapi/.venv_fastapi
+fastapi-streamlit/streamlit/.venv_streamlit
