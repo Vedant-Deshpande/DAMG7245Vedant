@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "plucky-avatar-389719",
+    "private_key_id": "e6a8a2e2970ec7682843cc1112d62474fc2b8275",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDF7+RGBcwioOpy\nMrkAvy0eq+6DqTtkiotNXaCU881ORtY1nvfmYkRlEaIn5BCWO/aikG441pd2CejY\n9lsrigvk73mVqIi/WowSqk527MGIAiUmvmsC5xLSWSf85BAr8K8TCS5KSJB/VgP6\nwrUx2ebu1byyQxdahb0Y5Q5IfBgDseNNFQW6dhMWL0b4hyf8k0Uh+jplinedWmOZ\nXk6vr/xUxB6VwRsIltQKq09OhwotJpi0g/6f8YafPSFjdL81LBY+1VhowI3qjwci\nyYMbFznQcl5vsGFTD2vibp9/JYEULad1zdHQtXYIWRCBCs5ZXZ20YdJFO1uYpcv8\nbwQvJZlLAgMBAAECggEAAmuTKE1cgvU3aKYOH7WMC6/2fqL3GEeeucIcpeBFRmEU\nsBsoKiemxnBCF1LGkSUH4vz5HAt5AUx7DbbAGUwwJmB3Osk7bXuMnZMk2ndn9mMa\n/oTy3K+On1vPuAaMhr0D/FZEZqF0gtoTumE0bfjyxet/HymK2OSBvL2Fldqj6zJK\nyWJQzXi5ysk1r8l+wm17Qz+PozVUowFeYh1svHVYT9YlrnFb3FK9w6B5+xh53d8S\nLqBSHteo1gRvwm5MKrOMU9A1uIL//q7aJ5nwYPNMlS6MuVAjDdy/H/kyrVK/ZF3I\nOI/F2EFBsRPWzqEmC//trBzLKpE7ZMqpf5YGbW8k4QKBgQDqw79kA2NPABI5KIuZ\nshL5O9y/9BxfLreXyU85Gg/6d8ynN/6ItHetHU0Ge2wdD5qzlE/II749hRNOWQDr\n+86r7XlmZVUvNJLZuR4R8d8gk4DsSRxC9CILtya14QwkT6SOZGFCJdu8gfvj38hQ\noCaOupxAvOS+UgxeIOU2H5cTpwKBgQDX11u/mZ63CadWwi/8o3L6TtmuYIIqNwv9\nY4BUc09BYRRfUv3lR10Z0WQpA7s0WiihSEvT7jbLwtyVo5DP7FuYhm6fkryQ3LCD\n8zlKwPZv+sVjtkbnNaxQmsdHX+FVYjC8vRYs1ijBuWpqdPlvudylwFTrnRU+ER+5\nz8OEiwIRvQKBgDw4SCD0iYXbQ9FrqBudxSYvh9mpWZnE1w1Vcz/3gn/COTnvsBgL\nCuPaL0bpY/s0ZH+KHMj++i63sxMW25is9/+8I7bzaV15g+3bgW4i+BRYIer6eghm\nrVEKAyEGgGHUGCb6csRQB8ScJyv13GFqI1nbXndwvNBhJZEDqSgwBEXjAoGAORrO\nOFvxZOXV8xs/TO0Fj3nrF7qK1ZZowqpfmnhDgL2pgSrY559A34LJqBxHnCs6Uqlo\n/nIo5zHv4Fs9BfW3qhvvCqLs5rqsrMxd3Qw+ZxQGw0HHcoZ9x3mbvaN9X3SyBk1U\nn5otgEuI/w9hqxCWcvf2v7t4kko/hY6VYOzSKFUCgYAcJYlc80H7nNDaqHi939VE\nK4kcLLyBZC9QKtnCn4MjhSyycbfpNyPpi8vTRvML7oWwjpfpBRyQ7QKmn1Jx6KZa\nMFN9d/NzkDCIckJaPRhlmv8uTQHIzOC5MZo5KTdovKtKrLlC4rCgI4lJqqCyilqs\njFkU1sbBb0Bo/F/OmwCtRw==\n-----END PRIVATE KEY-----\n",
+    "client_email": "cloud-db-user-637@plucky-avatar-389719.iam.gserviceaccount.com",
+    "client_id": "104386851723837340896",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-db-user-637%40plucky-avatar-389719.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
