@@ -1,0 +1,14 @@
+fastapi
+#sentence-transformers==2.1.0
+uvicorn
+gunicorn
+# Dev Dependencies
+httpx
+#pytest
+openai
+#redis
+python-dotenv
+google-cloud-storage
+cloud-sql-python-connector[pg8000]
+pandas
+SQLAlchemy
